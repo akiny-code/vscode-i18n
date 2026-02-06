@@ -1,0 +1,23 @@
+{
+	"name": "vscode-i18n",
+	"description": "VS Code i18n helper",
+	"version": "0.0.1",
+	"publisher": "ndd",
+	"repository": "https://github.com/akiny-code/vscode-i18n",
+	"engines": {
+		"vscode": "^1.100.0"
+	},
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onLanguage:typescript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescriptreact"
+	],
+	"main": "extension.js",
+	"devDependencies": {
+		"@vscode/vsce": "^3.7.1"
+	},
+	"scripts": {
+		"package": "vsce package"
+	}
+}
