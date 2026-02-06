@@ -8,6 +8,7 @@ function getI18nFile(filePath) {
 	if (filePath !== dirName) {
 		const i18nFile = path.join(dirName, 'locales', 'en.json')
 		if (fs.existsSync(i18nFile)) return i18nFile
+		return getI18nFile(dirName)
 	}
 }
 
